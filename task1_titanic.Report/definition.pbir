@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../task1_titanic.Dataset"
+    },
+    "byConnection": null
+  }
+}
