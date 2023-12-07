@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.49\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU11\",\"version\":\"5.49\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "config": "{\"version\":\"5.49\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU11\",\"version\":\"5.49\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -27,11 +27,41 @@
       "name": "ReportSection",
       "visualContainers": [
         {
-          "config": "{\"name\":\"be80d354f8bee6ca75e6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.346420323325637,\"y\":0,\"z\":0,\"width\":1269.6535796766746,\"height\":719.8152424942264,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Titanic-Dataset.Age (bins) (bins)\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Titanic-Dataset.Survived)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Titanic-Dataset\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Age (bins) (bins)\"},\"Name\":\"Titanic-Dataset.Age (bins) (bins)\",\"NativeReferenceName\":\"Age (bins) (bins)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Survived\"}},\"Function\":0},\"Name\":\"Sum(Titanic-Dataset.Survived)\",\"NativeReferenceName\":\"Sum of Survived\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Survived\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "config": "{\"name\":\"8c301e382759c74b3d96\",\"layouts\":[{\"id\":0,\"position\":{\"x\":677.137330754352,\"y\":0,\"z\":1000,\"width\":602.8626692456479,\"height\":476.59574468085106,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(Sheet1.Sales)\"}],\"Category\":[{\"queryRef\":\"Sheet1.Discount (bins) (bins)\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales\"}},\"Function\":5},\"Name\":\"CountNonNull(Sheet1.Sales)\",\"NativeReferenceName\":\"Count of Sales\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Discount (bins) (bins)\"},\"Name\":\"Sheet1.Discount (bins) (bins)\",\"NativeReferenceName\":\"Discount (bins) (bins)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
           "filters": "[]",
-          "height": 719.82,
-          "width": 1269.65,
-          "x": 10.35,
+          "height": 476.60,
+          "width": 602.86,
+          "x": 677.14,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"be80d354f8bee6ca75e6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.90328820116054,\"y\":0,\"z\":0,\"width\":667.2340425531914,\"height\":476.59574468085106,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Titanic-Dataset.Age (bins) (bins)\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Titanic-Dataset.Survived)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Titanic-Dataset\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Age (bins) (bins)\"},\"Name\":\"Titanic-Dataset.Age (bins) (bins)\",\"NativeReferenceName\":\"Age (bins) (bins)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Survived\"}},\"Function\":0},\"Name\":\"Sum(Titanic-Dataset.Survived)\",\"NativeReferenceName\":\"Sum of Survived\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Survived\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 476.60,
+          "width": 667.23,
+          "x": 9.90,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection912ef2a7924d5a5a2ffe",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"9237e7adc1c3b89f156b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.90328820116054,\"y\":0,\"z\":0,\"width\":1270.0967117988394,\"height\":720.4642166344294,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(Sheet1.Sales)\"}],\"Category\":[{\"queryRef\":\"Sheet1.Discount (bins) (bins)\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sheet1\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales\"}},\"Function\":5},\"Name\":\"CountNonNull(Sheet1.Sales)\",\"NativeReferenceName\":\"Count of Sales\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Discount (bins) (bins)\"},\"Name\":\"Sheet1.Discount (bins) (bins)\",\"NativeReferenceName\":\"Discount (bins) (bins)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Sales\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 720.46,
+          "width": 1270.10,
+          "x": 9.90,
           "y": 0.00,
           "z": 0.00
         }
